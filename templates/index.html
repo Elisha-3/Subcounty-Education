@@ -1,0 +1,1332 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nyamira South Sub‑County</title>
+  <meta name="description" content="Official Website for Nyamira South Sub‑County" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <style>
+    .carousel-item img {
+      height: 70vh;
+      object-fit: cover;
+    }
+    .carousel-caption {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 0.75rem;
+      padding: 1rem;
+    }
+    .navbar .dropdown:hover .dropdown-menu {
+      display: block;
+      margin-top: 0;
+    }
+    .card {
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    /* Hover Effects CSS */
+  .about-card {
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+  }
+  .about-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  }.resource-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  }
+
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Nyamira South</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#departments" id="departmentsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Departments</a>
+            <ul class="dropdown-menu" aria-labelledby="departmentsDropdown">
+              <li><a class="dropdown-item" href="#scde">SCDE</a></li>
+              <li><a class="dropdown-item" href="#scqaso">SCQASO</a></li>
+              <li><a class="dropdown-item" href="#audit">Audit</a></li>
+              <li><a class="dropdown-item" href="#examinations">Examinations</a></li>
+              <li><a class="dropdown-item" href="#ict">ICT</a></li>
+              <li><a class="dropdown-item" href="#clerical">Clerical / Records</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#institutions">Institutions</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacts">Contacts</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faqs">FAQs</a></li>
+        </ul>
+        <div class="d-flex" id="auth-buttons">
+          <button class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+          <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#registerModal">Register</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/1200/600?random=1" class="d-block w-100 img-fluid" alt="Community Development">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Welcome to Nyamira South</h5>
+          <p>Empowering communities through development and innovation.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1200/600?random=2" class="d-block w-100 img-fluid" alt="Education">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Institutions & Education</h5>
+          <p>Building a brighter future through education and skills development.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/1200/600?random=3" class="d-block w-100 img-fluid" alt="Infrastructure">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Ongoing Projects</h5>
+          <p>Driving growth with sustainable infrastructure and community projects.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- About Us -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">About Us</h2>
+    <div class="row g-4">
+      
+      <!-- Who We Are -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 about-card">
+          <div class="card-body text-center">
+            <i class="fas fa-users fa-3x text-primary mb-3"></i>
+            <h5 class="card-title">Who We Are</h5>
+            <p class="card-text">We are the Sub-County Education Office, committed to overseeing quality education delivery, resource management, and supporting schools within our jurisdiction.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Our Mission -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 about-card">
+          <div class="card-body text-center">
+            <i class="fas fa-bullseye fa-3x text-success mb-3"></i>
+            <h5 class="card-title">Our Mission</h5>
+            <p class="card-text">To foster equitable access to education, enhance teaching and learning outcomes, and strengthen collaboration among stakeholders for sustainable growth in the education sector.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Our Vision -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 about-card">
+          <div class="card-body text-center">
+            <i class="fas fa-lightbulb fa-3x text-warning mb-3"></i>
+            <h5 class="card-title">Our Vision</h5>
+            <p class="card-text">A future where every learner in the sub-county achieves their full potential through quality, inclusive, and innovative education services.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Departments -->
+  <section id="departments" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-5">Departments</h2>
+      <div class="row g-4">
+        <!-- SCDE Card -->
+        <div class="col-md-6 col-lg-4" id="scde">
+          <div class="card h-100 shadow">
+            <div class="card-body text-center">
+              <i class="bi bi-person-badge fs-1 text-primary mb-3"></i>
+              <h5 class="card-title">SCDE</h5>
+              <p class="card-text">Overseeing the management and coordination of education services in the sub-county.</p>
+              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#scdeModal">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <!-- SCQASO Card -->
+        <div class="col-md-6 col-lg-4" id="scqaso">
+          <div class="card h-100 shadow">
+            <div class="card-body text-center">
+              <i class="bi bi-check-circle fs-1 text-success mb-3"></i>
+              <h5 class="card-title">SCQASO</h5>
+              <p class="card-text">Maintaining and improving the quality of education through inspections and evaluations.</p>
+              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#scqasoModal">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <!-- Audit Card -->
+        <div class="col-md-6 col-lg-4" id="audit">
+          <div class="card h-100 shadow">
+            <div class="card-body text-center">
+              <i class="bi bi-file-earmark-check fs-1 text-warning mb-3"></i>
+              <h5 class="card-title">Audit</h5>
+              <p class="card-text">Ensuring transparency, accountability, and compliance in financial and operational procedures.</p>
+              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#auditModal">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <!-- Examinations Card -->
+        <div class="col-md-6 col-lg-4" id="examinations">
+          <div class="card h-100 shadow">
+            <div class="card-body text-center">
+              <i class="bi bi-pencil-square fs-1 text-danger mb-3"></i>
+              <h5 class="card-title">Examinations</h5>
+              <p class="card-text">Managing and coordinating examinations within the sub-county.</p>
+              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#examsModal">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <!-- ICT Card -->
+        <div class="col-md-6 col-lg-4" id="ict">
+          <div class="card h-100 shadow">
+            <div class="card-body text-center">
+              <i class="bi bi-laptop fs-1 text-info mb-3"></i>
+              <h5 class="card-title">ICT</h5>
+              <p class="card-text">Enhancing digital infrastructure and integrating technology in education.</p>
+              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#ictModal">Learn More</button>
+            </div>
+          </div>
+        </div>
+        <!-- Clerical/Records Card -->
+        <div class="col-md-6 col-lg-4" id="clerical">
+          <div class="card h-100 shadow">
+            <div class="card-body text-center">
+              <i class="bi bi-archive fs-1 text-secondary mb-3"></i>
+              <h5 class="card-title">Clerical / Records</h5>
+              <p class="card-text">Handling documentation and records for the education office.</p>
+              <button class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#clericalModal">Learn More</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Institutions -->
+  <section id="institutions" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Institutions</h2>
+    <p class="text-center mb-5">
+      The Sub-County is home to diverse learning institutions that nurture talent, 
+      promote innovation, and provide inclusive education from early years to tertiary levels.
+    </p>
+
+    <div class="row g-4">
+      
+      <!-- Pre-Primary -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center shadow h-100 institution-card">
+          <div class="card-body">
+            <i class="fas fa-child fa-3x mb-3 text-primary"></i>
+            <h5 class="card-title">Pre-Primary</h5>
+            <h3 class="fw-bold text-dark">250+</h3>
+            <p class="card-text">Early childhood education centers supporting holistic growth.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Primary -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center shadow h-100 institution-card">
+          <div class="card-body">
+            <i class="fas fa-school fa-3x mb-3 text-success"></i>
+            <h5 class="card-title">Primary Schools</h5>
+            <h3 class="fw-bold text-dark">120+</h3>
+            <p class="card-text">Providing foundational literacy and numeracy for learners.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Junior Secondary -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center shadow h-100 institution-card">
+          <div class="card-body">
+            <i class="fas fa-user-graduate fa-3x mb-3 text-info"></i>
+            <h5 class="card-title">Junior Schools</h5>
+            <h3 class="fw-bold text-dark">35+</h3>
+            <p class="card-text">CBC Junior Secondary schools shaping future competencies.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Senior Secondary -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center shadow h-100 institution-card">
+          <div class="card-body">
+            <i class="fas fa-university fa-3x mb-3 text-warning"></i>
+            <h5 class="card-title">Senior Schools</h5>
+            <h3 class="fw-bold text-dark">20+</h3>
+            <p class="card-text">Preparing learners for higher education and careers.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SNE -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center shadow h-100 institution-card">
+          <div class="card-body">
+            <i class="fas fa-universal-access fa-3x mb-3 text-danger"></i>
+            <h5 class="card-title">Special Needs</h5>
+            <h3 class="fw-bold text-dark">10+</h3>
+            <p class="card-text">Inclusive schools catering for learners with special needs.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Vocational -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center shadow h-100 institution-card">
+          <div class="card-body">
+            <i class="fas fa-tools fa-3x mb-3 text-secondary"></i>
+            <h5 class="card-title">Vocational Centers</h5>
+            <h3 class="fw-bold text-dark">5+</h3>
+            <p class="card-text">Hands-on training centers for technical skills development.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Colleges -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center shadow h-100 institution-card">
+          <div class="card-body">
+            <i class="fas fa-book-reader fa-3x mb-3 text-primary"></i>
+            <h5 class="card-title">Colleges</h5>
+            <h3 class="fw-bold text-dark">3+</h3>
+            <p class="card-text">Institutions providing specialized diploma courses.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- TVETs -->
+      <div class="col-md-3 col-sm-6">
+        <div class="card text-center shadow h-100 institution-card">
+          <div class="card-body">
+            <i class="fas fa-chalkboard-teacher fa-3x mb-3 text-success"></i>
+            <h5 class="card-title">TVETs</h5>
+            <h3 class="fw-bold text-dark">2+</h3>
+            <p class="card-text">Technical and vocational training for career readiness.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Services -->
+   <section id="services" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Services</h2>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <!-- Student Admissions & Transfers -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Student Admissions & Transfers</h5>
+            <p class="card-text">Processing of new admissions, inter-school transfers, and learner placement support.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Examination Management -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Examination Management</h5>
+            <p class="card-text">Registration, supervision, and dissemination of examination results.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Teacher Management & Support -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Teacher Management & Support</h5>
+            <p class="card-text">Handling postings, transfers, and capacity building for teachers.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quality Assurance & Standards -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Quality Assurance & Standards</h5>
+            <p class="card-text">Monitoring and evaluating schools to ensure compliance with education standards.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Records & Data Management -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">Records & Data Management</h5>
+            <p class="card-text">Managing learner records, school performance data, and teacher files.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ICT Support & Innovation -->
+      <div class="col">
+        <div class="card h-100 shadow-sm">
+          <div class="card-body text-center">
+            <h5 class="card-title">ICT Support & Innovation</h5>
+            <p class="card-text">Supporting e-learning, digital tools, and ICT troubleshooting.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Resources Section -->
+<section id="resources" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4 fw-bold">Resources</h2>
+    <p class="text-center text-muted mb-5">
+      Discover the key resources provided by Nyamira South Sub-County Education Office to support teachers, learners, and institutions.
+    </p>
+
+    <!-- Resource Cards -->
+    <div class="row g-4">
+      <!-- CBC Guide -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 resource-card text-center">
+          <div class="card-body">
+            <i class="fas fa-book-open fa-3x text-primary mb-3"></i>
+            <h5 class="card-title">CBC Implementation Guide</h5>
+            <p class="card-text text-muted">A comprehensive guide on Competency-Based Curriculum (CBC) implementation.</p>
+            <a href="documents/cbc_guide.pdf" class="btn btn-outline-primary btn-sm" download>Download PDF (2MB)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Safety Guidelines -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 resource-card text-center">
+          <div class="card-body">
+            <i class="fas fa-shield-alt fa-3x text-success mb-3"></i>
+            <h5 class="card-title">School Safety Guidelines</h5>
+            <p class="card-text text-muted">Protocols to ensure the safety and well-being of learners in schools.</p>
+            <a href="documents/school_safety_guidelines.pdf" class="btn btn-outline-success btn-sm" download>Download PDF (1.5MB)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Teacher Training Manual -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 resource-card text-center">
+          <div class="card-body">
+            <i class="fas fa-chalkboard-teacher fa-3x text-warning mb-3"></i>
+            <h5 class="card-title">Teacher Training Manual</h5>
+            <p class="card-text text-muted">Manual for educators on effective teaching aligned with CBC.</p>
+            <a href="documents/teacher_training_manual.pdf" class="btn btn-outline-warning btn-sm" download>Download PDF (3MB)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Exam Results Template -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 resource-card text-center">
+          <div class="card-body">
+            <i class="fas fa-file-excel fa-3x text-success mb-3"></i>
+            <h5 class="card-title">Exam Results Template</h5>
+            <p class="card-text text-muted">Excel template for recording and tracking student results.</p>
+            <a href="documents/exam_results_template.xlsx" class="btn btn-outline-success btn-sm" download>Download XLSX (200KB)</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Admission Form -->
+      <div class="col-md-4">
+        <div class="card h-100 shadow-sm border-0 resource-card text-center">
+          <div class="card-body">
+            <i class="fas fa-file-word fa-3x text-info mb-3"></i>
+            <h5 class="card-title">Student Admission Form</h5>
+            <p class="card-text text-muted">Official template for enrolling students in schools.</p>
+            <a href="documents/student_admission_form.docx" class="btn btn-outline-info btn-sm" download>Download DOCX (150KB)</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tutorials Section -->
+    <div class="mt-5">
+      <h3 class="text-center mb-4 fw-bold">Curriculum Tutorials</h3>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm border-0 resource-card">
+            <div class="card-body text-center">
+              <i class="fas fa-cloud fa-3x text-primary mb-3"></i>
+              <h5 class="card-title">Kenya Education Cloud</h5>
+              <p class="card-text text-muted">A digital platform for accessing curriculum materials and resources.</p>
+              <a href="https://kec.ac.ke/" class="btn btn-primary btn-sm" target="_blank">Visit Now</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card h-100 shadow-sm border-0 resource-card">
+            <div class="card-body text-center">
+              <i class="fas fa-video fa-3x text-danger mb-3"></i>
+              <h5 class="card-title">School Safety Training</h5>
+              <p class="card-text text-muted">Video training on implementing safety measures in schools.</p>
+              <a href="https://www.youtube.com/watch?v=0ftj0ESxVsw&list=PLj2vxyuu8hVAzpNYxKFgNrLxuJYWN3qzw" 
+                 class="btn btn-danger btn-sm" target="_blank">Watch Video</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Projects Section -->
+<section id="projects" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4">Our Projects</h2>
+    <div class="row g-4">
+
+      <!-- CBC Classrooms -->
+      <div class="col-md-4">
+        <div class="card text-center h-100 shadow-sm">
+          <div class="card-body">
+            <i class="bi bi-building fs-1 text-primary mb-3"></i>
+            <h5 class="card-title">CBC Classrooms</h5>
+            <p class="card-text">
+              Construction and equipping of Competency-Based Curriculum classrooms to support quality learning.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- School Infrastructure -->
+      <div class="col-md-4">
+        <div class="card text-center h-100 shadow-sm">
+          <div class="card-body">
+            <i class="bi bi-bank2 fs-1 text-success mb-3"></i>
+            <h5 class="card-title">School Infrastructure</h5>
+            <p class="card-text">
+              Expansion and improvement of school facilities such as libraries, laboratories, and sanitation blocks.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Teacher Training -->
+      <div class="col-md-4">
+        <div class="card text-center h-100 shadow-sm">
+          <div class="card-body">
+            <i class="bi bi-person-workspace fs-1 text-warning mb-3"></i>
+            <h5 class="card-title">Teacher Training (INSETs)</h5>
+            <p class="card-text">
+              Regular in-service training sessions for teachers to strengthen capacity and enhance pedagogy.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ICT Integration -->
+      <div class="col-md-4">
+        <div class="card text-center h-100 shadow-sm">
+          <div class="card-body">
+            <i class="bi bi-laptop fs-1 text-info mb-3"></i>
+            <h5 class="card-title">ICT Integration</h5>
+            <p class="card-text">
+              Equipping schools with ICT tools and promoting digital literacy to support modern learning methods.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scholarship Programs -->
+      <div class="col-md-4">
+        <div class="card text-center h-100 shadow-sm">
+          <div class="card-body">
+            <i class="bi bi-mortarboard fs-1 text-danger mb-3"></i>
+            <h5 class="card-title">Scholarship Programs</h5>
+            <p class="card-text">
+              Supporting learners from disadvantaged backgrounds with bursaries and scholarships.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Co-curricular Activities -->
+      <div class="col-md-4">
+        <div class="card text-center h-100 shadow-sm">
+          <div class="card-body">
+            <i class="bi bi-trophy fs-1 text-secondary mb-3"></i>
+            <h5 class="card-title">Co-curricular Development</h5>
+            <p class="card-text">
+              Enhancing sports, arts, and talent development programs across schools in the sub-county.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Contact & FAQs Section -->
+<section id="contact-faqs" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4 fw-bold">Get in Touch & FAQs</h2>
+    <p class="text-center text-muted mb-5">
+      Reach out to us or find quick answers to common questions.
+    </p>
+    <div class="row g-4">
+      
+      <!-- Contact Card -->
+      <div class="col-md-5">
+        <div class="card h-100 shadow-sm border-0 p-4">
+          <h4 class="fw-bold mb-3"><i class="fas fa-address-card text-primary me-2"></i> Contact Us</h4>
+          <p><i class="fas fa-map-marker-alt text-danger me-2"></i><strong>Address:</strong> 4-40500, Nyamira, Kenya</p>
+          <p><i class="fas fa-envelope text-success me-2"></i><strong>Email:</strong> 
+            <a href="mailto:scdenyamira@gmail.com">scdenyamira@gmail.com</a>
+          </p>
+          <p><i class="fas fa-phone-alt text-info me-2"></i><strong>Phone:</strong> +254 781 504 768</p>
+          <hr>
+          <p class="small text-muted">We are available during working hours (Mon–Fri, 8:00 AM – 5:00 PM).</p>
+        </div>
+      </div>
+
+      <!-- FAQs -->
+      <div class="col-md-7">
+        <div class="card h-100 shadow-sm border-0 p-4">
+          <h4 class="fw-bold mb-3"><i class="fas fa-question-circle text-warning me-2"></i> FAQs</h4>
+          <div class="accordion" id="faqAccordion">
+            
+            <!-- FAQ 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  How do I contact the Sub-County Education Office?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" 
+                   aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  You can reach us via email at <a href="mailto:scdenyamira@gmail.com">scdenyamira@gmail.com</a> 
+                  or call +254 781 504 768. Visit the <a href="#contact-faqs">Contact section</a> for more details.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  How can I enroll my child in a school within the sub-county?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" 
+                   aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Enrollment is done directly through schools. See the <a href="#institutions">Institutions section</a> 
+                  for admission procedures.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Where can I find resources for teachers and students?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" 
+                   aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Visit the <a href="#resources">Resources</a> section for curriculum guides, 
+                  exam templates, and online learning platforms.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  How do I report an issue or complaint about a school?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" 
+                   aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Issues can be reported directly at the Sub-County Education Office. 
+                  Check the <a href="#contact-faqs">Contact Us</a> section for submission details.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" 
+                        data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Can I access examination results from schools in the sub-county?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" 
+                   aria-labelledby="headingFive" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Examination results are handled by individual schools. 
+                  Contact the respective institution or our office for guidance.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <!-- Department Modals -->
+  <!-- SCDE Modal -->
+  <div class="modal fade" id="scdeModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">SCDE Department</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-8">
+              <h5>SCDE Overview</h5>
+              <p>The Sub-County Director of Education (SCDE) is responsible for overseeing the management and coordination of education services in the sub-county. The SCDE ensures that educational policies are implemented effectively, teachers are well-trained, and schools maintain high standards.</p>
+              <h5>Key Responsibilities</h5>
+              <ul>
+                <li>Implementing education policies from the Ministry of Education.</li>
+                <li>Managing teacher deployment in public schools within the sub-county.</li>
+                <li>Supervising school administration and ensuring compliance with national standards.</li>
+                <li>Coordinating educational programs and projects in the sub-county.</li>
+                <li>Managing school infrastructure development projects.</li>
+              </ul>
+              <h5>SCDE Initiatives</h5>
+              <p>The SCDE is actively involved in several initiatives aimed at improving the quality of education in the sub-county, including:</p>
+              <ul>
+                <li>Infrastructure upgrades for primary and secondary schools.</li>
+                <li>Teacher capacity-building programs and training workshops.</li>
+                <li>Monitoring and evaluation of school performance and student progression.</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Contact Information</h4>
+              <p><strong>Name:</strong> Faith Kiprono (SCDE)</p>
+              <p><strong>Office Location:</strong> Nyamira South Sub-County Offices</p>
+              <p><strong>Email:</strong> scde.nyamira@gmail.com</p>
+              <p><strong>Phone:</strong> +254 781234567</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCQASO Modal -->
+  <div class="modal fade" id="scqasoModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">SCQASO Department</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="text-center">Sub-County Quality Assurance and Standards Officer (SCQASO)</h5>
+          <p class="text-center text-muted">Ensuring education quality and standards are upheld in Nyamira South Sub-County.</p>
+          <div class="row">
+            <div class="col-md-8">
+              <h5>SCQASO Overview</h5>
+              <p>The Sub-County Quality Assurance and Standards Officer (SCQASO) is tasked with maintaining and improving the quality of education in the sub-county. The SCQASO monitors and evaluates schools to ensure they comply with educational standards.</p>
+              <h5>Key Responsibilities</h5>
+              <ul>
+                <li>Conducting regular inspections of schools to ensure compliance with quality standards.</li>
+                <li>Advising school management on best practices for improving education quality.</li>
+                <li>Evaluating teaching methods and learning outcomes in schools.</li>
+                <li>Ensuring adherence to safety and health regulations in schools.</li>
+                <li>Reporting and documenting school performance and challenges to the Ministry of Education.</li>
+              </ul>
+              <h5>SCQASO Initiatives</h5>
+              <p>The SCQASO is involved in initiatives aimed at raising educational standards, such as:</p>
+              <ul>
+                <li>Periodic teacher evaluations and training sessions.</li>
+                <li>School improvement programs and performance monitoring.</li>
+                <li>Ensuring implementation of the Competency-Based Curriculum (CBC) standards.</li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h3>Contact Information</h3>
+              <p><strong>Name:</strong> George K (SCQASO)</p>
+              <p><strong>Office Location:</strong> Nyamira South Sub-County Offices</p>
+              <p><strong>Email:</strong> scqaso.nyamira@gmail.com</p>
+              <p><strong>Phone:</strong> +254 712345678</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Audit Modal -->
+ <!-- Audit Modal -->
+<div class="modal fade" id="auditModal" tabindex="-1">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Audit Department</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <h4 class="display-5 text-center">Audit Department</h4>
+        <p class="text-muted text-center">
+          The Audit Department of the Sub County Education Office is responsible for ensuring transparency, accountability, and compliance with financial and operational procedures across all educational institutions in the sub-county. Our mandate is to conduct thorough audits of financial records, resource utilization, and administrative processes to safeguard public funds and improve efficiency. By offering objective evaluations and recommendations, we aim to strengthen governance, minimize risks, and promote responsible stewardship of resources in the education sector.
+        </p>
+
+        <div class="d-flex flex-wrap gap-2 justify-content-center mb-3">
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseItem1" role="button">Financial Audits</a>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseItem2">Internal Control Assessments</button>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseItem3">Resource Utilization Audits</button>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseItem4" role="button">Compliance Audits</a>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseItem5">Training & Capacity Building</button>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse">Audit Services</button>
+        </div>
+
+        <!-- Book Appointment Button -->
+        <div class="text-center mt-3">
+          <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#appointmentModal" data-bs-dismiss="modal">
+            📅 Book Appointment
+          </button>
+        </div>
+
+        <!-- Collapsible Sections -->
+        <div class="row mt-4">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseItem1">
+              <div class="card card-body">
+                We conduct thorough reviews of school financial records to ensure accuracy, transparency, and compliance with budgeting and financial regulations.
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseItem2">
+              <div class="card card-body">
+                We evaluate the effectiveness of internal controls to safeguard institutional resources, identify risks, and recommend improvements to prevent fraud and misuse of funds.
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseItem3">
+              <div class="card card-body">
+                We assess how schools use their resources, including funds, materials, and equipment, to promote efficiency and accountability.
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseItem4">
+              <div class="card card-body">
+                We verify that institutions are following government regulations, policies, and procedures in financial management, procurement, and other administrative functions.
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseItem5">
+              <div class="card card-body">
+                We offer workshops and training for school administrators and finance staff to help them better understand financial management, compliance, and audit processes.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Appointment Modal -->
+<div class="modal fade" id="appointmentModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Book Appointment with Audit Department</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" class="form-control" id="fullName" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="phone" class="form-label">Phone Number</label>
+            <input type="tel" class="form-control" id="phone" required>
+          </div>
+          <div class="mb-3">
+            <label for="date" class="form-label">Preferred Date</label>
+            <input type="date" class="form-control" id="date" required>
+          </div>
+          <div class="mb-3">
+            <label for="time" class="form-label">Preferred Time</label>
+            <input type="time" class="form-control" id="time" required>
+          </div>
+          <div class="mb-3">
+            <label for="reason" class="form-label">Reason for Appointment</label>
+            <textarea class="form-control" id="reason" rows="3" required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-success">Submit Appointment</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Examinations Modal -->
+  <div class="modal fade" id="examsModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Examinations Department</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>Information about Examinations department goes here...</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ICT Modal -->
+  <div class="modal fade" id="ictModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">ICT Department</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="display-5 text-center">ICT Department</h5>
+          <p class="text-muted text-center">The ICT Department at the Sub County Education Office plays a critical role in enhancing the digital infrastructure of the education sector. We are dedicated to supporting the integration of technology in schools and ensuring that educators, students, and administrators have access to reliable and efficient IT services. Our responsibilities include maintaining the digital learning environment, managing data systems, providing technical support, and facilitating training on new technologies. By leveraging innovative solutions, we strive to improve the delivery of education and foster an environment where technology empowers learning and administration across the sub-county.</p>
+          <div class="row text-center">
+            <div class="col-md-6">
+              <h5 class="text-primary">Our Mission</h5>
+              <p class="text-muted">"To enhance the quality of education by providing innovative, efficient, and reliable ICT solutions that support teaching, learning, and administrative functions within the sub-county."</p>
+            </div>
+            <div class="col-md-6">
+              <h5 class="text-danger">Our Vision</h5>
+              <p class="text-muted"> "To be a leader in the integration of technology in education, fostering an environment where digital tools and resources empower educators, students, and administrators for academic and operational excellence."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Clerical/Records Modal -->
+  <div class="modal fade" id="clericalModal" tabindex="-1">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Clerical/Records Department</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <h5 class="display-5 text-center">Clerical/Records Department</h5>
+          <p class="text-center text-muted">Efficient record management for the Nyamira South Sub-County Education Office.</p>
+          <div class="row">
+            <div class="col-md-8">
+              <h5>Overview</h5>
+              <p>The Clerical/Records Department is responsible for handling all documentation and records for the Nyamira South Sub-County Education Office. The department ensures that records are well-organized, easily accessible, and securely stored in both physical and digital formats.</p>
+              <h5>Key Responsibilities</h5>
+              <ul>
+                <li>Maintaining accurate and up-to-date records of schools, students, and staff in the sub-county.</li>
+                <li>Archiving important documents, including school reports, examination results, and government policies.</li>
+                <li>Issuing and receiving official documents, such as certificates and reports, from schools and other educational institutions.</li>
+                <li>Processing student admissions, transfers, and other records-related requests.</li>
+                <li>Ensuring secure storage and handling of confidential information.</li>
+              </ul>
+              <h5>Services Provided</h5>
+              <p>The Clerical/Records Department offers the following services to the public and education institutions:</p>
+              <ul>
+                <li>Retrieval of archived school records and reports.</li>
+                <li>Verification of student and staff documentation for compliance purposes.</li>
+                <li>Assistance with records management for schools within the sub-county.</li>
+                <li>Guidance on document submission for new schools and institutions.</li>
+              </ul>
+              <h4>Digital Records Management</h4>
+              <p>The department is also in the process of digitizing its records for improved efficiency. This will allow schools, parents, and other stakeholders to access important information online in a secure and timely manner.</p>
+            </div>
+            <div class="col-md-4">
+              <h5>Contact Information</h5>
+              <p><strong>Head of Department:</strong> Peter Otieno (Clerical/Records Officer)</p>
+              <p><strong>Office Location:</strong> Nyamira South Sub-County Offices</p>
+              <p><strong>Email:</strong> records.nyamira@gmail.com</p>
+              <p><strong>Phone:</strong> +254 712345679</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Login</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <form id="loginForm">
+          <div class="mb-3">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input type="password" class="form-control" name="password" required>
+          </div>
+          <button type="button" id="loginBtn" class="btn btn-dark w-100">Login</button>
+        </form>
+        <div class="mt-3 text-center">
+          <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#forgotModal">Forgot Password?</a><br>
+          <span>Don't have an account? 
+            <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#registerModal">Register</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <!-- Register Modal -->
+  <div class="modal fade" id="registerModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Register</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="registerForm">
+            <div class="mb-3"><label class="form-label">Username</label><input type="text" name="username" class="form-control" required></div>
+            <div class="mb-3"><label class="form-label">Email</label><input type="email" name="email" class="form-control" required></div>
+            <div class="mb-3"><label class="form-label">Password</label><input type="password" name="password" class="form-control" required></div>
+            <div class="mb-3"><label class="form-label">Confirm Password</label><input type="password" name="confirm_password" class="form-control" required></div>
+            <button type="button" id="registerBtn" class="btn btn-warning w-100">Register</button>
+          </form>
+          <div class="mt-3 text-center">
+            <span>Already have an account? <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Forgot Password Modal -->
+  <div class="modal fade" id="forgotModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Forgot Password</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="forgotForm">
+            <div class="mb-3"><label class="form-label">Enter your email</label><input type="email" name="email" class="form-control" required></div>
+            <button type="button" id="forgotBtn" class="btn btn-dark w-100">Send Reset Link</button>
+          </form>
+          <div class="mt-3 text-center">
+            <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#loginModal">Back to Login</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Reset Password Modal -->
+  <div class="modal fade" id="resetModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Reset Password</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="resetForm">
+            <div class="mb-3"><label class="form-label">New Password</label><input type="password" name="password" class="form-control" required></div>
+            <div class="mb-3"><label class="form-label">Confirm Password</label><input type="password" name="confirm_password" class="form-control" required></div>
+            <button type="button" id="resetBtn" class="btn btn-dark w-100">Reset Password</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="bg-dark text-white py-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 mb-3">
+          <h5>Nyamira South Education</h5>
+          <p>Providing, promoting and coordinating quality education, training, research and enhancing integration of Science Technology and Innovation into national production system for sustainable development.</p>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a class="text-white" href="#about">About Us</a></li>
+            <li><a class="text-white" href="#departments">Departments</a></li>
+            <li><a class="text-white" href="#institutions">Institutions</a></li>
+            <li><a class="text-white" href="#services">Services</a></li>
+            <li><a class="text-white" href="#projects">Projects</a></li>
+            <li><a class="text-white" href="#faqs">FAQs</a></li>
+            <li><a class="text-white" href="#contacts">Contacts</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Contact Us</h5>
+          <p><strong>Address:</strong> 4‑40500, Nyamira, Kenya</p>
+          <p><strong>Email:</strong> scdenyamira@gmail.com</p>
+          <p><strong>Phone:</strong> +254 781504768</p>
+        </div>
+      </div>
+      <div class="text-center mt-4">
+        <p class="mb-0">© 2025 Nyamira South Sub‑County Education. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+  // Load projects on page load and poll every 30s
+  function loadProjects() {
+    fetch('/api/projects')
+      .then(response => response.json())
+      .then(data => {
+        const container = document.getElementById('projects-container');
+        if (!container) return;
+        container.innerHTML = '';
+        data.forEach(project => {
+          const card = `
+            <div class="col-md-4">
+              <div class="card text-center h-100 shadow-sm">
+                <div class="card-body">
+                  <i class="${project.icon} fs-1 text-primary mb-3"></i>
+                  <h5 class="card-title">${project.title}</h5>
+                  <p class="card-text">${project.description}</p>
+                </div>
+              </div>
+            </div>`;
+          container.insertAdjacentHTML('beforeend', card);
+        });
+      });
+  }
+  loadProjects();
+  setInterval(loadProjects, 30000);
+
+  // Function to update navbar for logged in user
+  function updateNavbar(username) {
+    const authDiv = document.getElementById('auth-buttons');
+    if (authDiv) {
+      authDiv.innerHTML = `
+        <span class="navbar-text me-2">Welcome, ${username}</span>
+        <a href="/logout" class="btn btn-danger">Logout</a>
+      `;
+    }
+  }
+
+  /// Login AJAX
+const loginBtn = document.getElementById('loginBtn');
+if (loginBtn) {
+  loginBtn.addEventListener('click', () => {
+    const form = document.getElementById('loginForm');
+    const formData = new FormData(form);
+
+    fetch('/login', { 
+      method: 'POST', 
+      body: formData, 
+      headers: { 'X-Requested-With': 'XMLHttpRequest' } 
+    })
+    .then(r => r.json())
+    .then(data => {
+      if (data.success) {
+        if (data.redirect) {
+          window.location.href = data.redirect;
+        } else {
+          updateNavbar(data.username || 'User');
+          bootstrap.Modal.getInstance(document.getElementById('loginModal')).hide();
+        }
+      } else {
+        alert(data.message);
+      }
+    })
+    .catch(err => console.error('Login error:', err));
+  });
+}
+
+  // Register AJAX
+  const registerBtn = document.getElementById('registerBtn');
+  if (registerBtn) {
+    registerBtn.addEventListener('click', () => {
+      const form = document.getElementById('registerForm');
+      const formData = new FormData(form);
+
+      // Client-side check
+      if (formData.get('password') !== formData.get('confirm_password')) {
+        alert('Passwords do not match');
+        return;
+      }
+
+      fetch('/register', {
+        method: 'POST',
+        body: formData,
+        headers: { 'X-Requested-With': 'XMLHttpRequest' }
+      })
+      .then(async response => {
+        const data = await response.json().catch(() => ({}));
+        if (!response.ok) {
+          alert(data.message || data.error || "Something went wrong.");
+          return;
+        }
+        alert(data.message || "Registration successful.");
+        if (data.success) {
+          const registerModalEl = document.getElementById('registerModal');
+          const registerModal = bootstrap.Modal.getOrCreateInstance(registerModalEl);
+          registerModal.hide();
+          form.reset();
+
+          // Automatically open login modal
+          const loginModalEl = document.getElementById('loginModal');
+          const loginModal = bootstrap.Modal.getOrCreateInstance(loginModalEl);
+          loginModal.show();
+        }
+      })
+      .catch(err => {
+        console.error("AJAX Error:", err);
+        alert("Failed to connect to server. Please try again.");
+      });
+    });
+  }
+
+  // Forgot Password AJAX
+  const forgotBtn = document.getElementById('forgotBtn');
+  if (forgotBtn) {
+    forgotBtn.addEventListener('click', () => {
+      const form = document.getElementById('forgotForm');
+      const formData = new FormData(form);
+
+      fetch('/forgot_password', {
+        method: 'POST',
+        body: formData,
+        headers: { 'X-Requested-With': 'XMLHttpRequest' }
+      })
+      .then(r => r.json())
+      .then(data => {
+        alert(data.message || data.error);
+        if (data.success) {
+          bootstrap.Modal.getInstance(document.getElementById('forgotModal')).hide();
+        }
+      })
+      .catch(err => console.error('Forgot password error:', err));
+    });
+  }
+
+  // Reset Password AJAX (assuming token is in URL, but for modal, need to handle if token present)
+  const resetBtn = document.getElementById('resetBtn');
+  if (resetBtn) {
+    resetBtn.addEventListener('click', () => {
+      const form = document.getElementById('resetForm');
+      const formData = new FormData(form);
+      const urlParams = new URLSearchParams(window.location.search);
+      const token = urlParams.get('token');
+      if (!token) {
+        alert('Invalid reset link.');
+        return;
+      }
+
+      fetch(`/reset_password/${token}`, {
+        method: 'POST',
+        body: formData,
+        headers: { 'X-Requested-With': 'XMLHttpRequest' }
+      })
+      .then(r => r.json())
+      .then(data => {
+        alert(data.message || data.error);
+        if (data.success) {
+          bootstrap.Modal.getInstance(document.getElementById('resetModal')).hide();
+          // Open login modal
+          const loginModalEl = document.getElementById('loginModal');
+          const loginModal = bootstrap.Modal.getOrCreateInstance(loginModalEl);
+          loginModal.show();
+        }
+      })
+      .catch(err => console.error('Reset password error:', err));
+    });
+  }
+
+  // Check for token in URL to open reset modal
+  const urlParams = new URLSearchParams(window.location.search);
+  const token = urlParams.get('token');
+  if (token) {
+    const resetModalEl = document.getElementById('resetModal');
+    const resetModal = bootstrap.Modal.getOrCreateInstance(resetModalEl);
+    resetModal.show();
+  }
+
+});
+</script>
+
+</body>
+</html>
