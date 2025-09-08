@@ -16,21 +16,20 @@ app.permanent_session_lifetime = timedelta(days=7)
 
 def get_db():
     return pymysql.connect(
-        host='localhost',
-        user='root',
-        password='',
-        database='nyamira',
-        cursorclass=pymysql.cursors.DictCursor  # ensures dict results
+        host=os.getenv("DB_HOST"),   # e.g. AWS RDS endpoint
+        user=os.getenv("DB_USER"),
+        password=os.getenv("DB_PASSWORD"),
+        database=os.getenv("DB_NAME"),
+        cursorclass=pymysql.cursors.DictCursor
     )
 
-
-app.config['MAIL_SERVER'] = 'smtp.gmail.com'
-app.config['MAIL_PORT'] = 587
-app.config['MAIL_USE_TLS'] = True
-app.config['MAIL_USE_SSL'] = False
-app.config['MAIL_USERNAME'] = 'itselmonelsoftware.sol@gmail.com'
-app.config['MAIL_PASSWORD'] = 'kwyj cudo jray rniv'
-app.config['MAIL_DEFAULT_SENDER'] = 'itselmonelsoftware.sol@gmail.com'
+app.config['MAIL_SERVER'] = os.environ.get('MAIL_SERVER', 'smtp.gmail.com')
+app.config['MAIL_PORT'] = int(os.environ.get('MAIL_PORT', 587))
+app.config['MAIL_USE_TLS'] = os.environ.get('MAIL_USE_TLS', 'True') == 'True'
+app.config['MAIL_USE_SSL'] = os.environ.get('MAIL_USE_SSL', 'False') == 'True'
+app.config['MAIL_USERNAME'] = os.environ.get('MAIL_USERNAME')
+app.config['MAIL_PASSWORD'] = os.environ.get('MAIL_PASSWORD')
+app.config['MAIL_DEFAULT_SENDER'] = os.environ.get('MAIL_USERNAME')
 
 mail = Mail(app)
 
