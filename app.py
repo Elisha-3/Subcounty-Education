@@ -47,6 +47,7 @@ def index():
             return redirect(url_for('audit_dashboard'))
     return render_template('index.html')
 
+# Login route
 @app.route('/login', methods=['POST'])
 def login():
     email = request.form['email']
@@ -61,19 +62,21 @@ def login():
 
     if user and check_password_hash(user['password'], password):
         session['user_id'] = user['id']
-        session['role'] = user['role']  # store as-is from DB
+        session['role'] = user['role']  
 
-        # normalize role for comparison
         role = user['role'].strip().lower() if user['role'] else ""
 
         if role == 'scde':
             return jsonify({'success': True, 'redirect': url_for('scde_dashboard')})
         elif role == 'auditor':
             return jsonify({'success': True, 'redirect': url_for('audit_dashboard')})
+        elif role == 'hoi':
+            return jsonify({'success': True, 'redirect': url_for('hoi_dashboard')})
         else:
             return jsonify({'success': True, 'redirect': url_for('index')})
     else:
         return jsonify({'success': False, 'message': 'Invalid email or password'})
+
 
 # Register route
 @app.route('/register', methods=['POST'])
@@ -152,6 +155,13 @@ def audit_dashboard():
     if 'user_id' not in session or session.get('role').lower() != 'auditor':
         return redirect(url_for('login'))
     return render_template('audit_dashboard.html')
+
+# HOI Dashboard (protected)
+@app.route('/hoi/dashboard')
+def hoi_dashboard():
+    if 'user_id' not in session or session.get('role').lower() != 'hoi':
+        return redirect(url_for('login'))
+    return render_template('hoi_dashboard.html')
 
 
 # API to fetch data

@@ -66,7 +66,18 @@
               <li><a class="dropdown-item" href="#clerical">Clerical / Records</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#institutions">Institutions</a></li>
+          {% if session.get('role') == 'HOI' %}
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="institutionsDropdown" role="button" data-bs-toggle="dropdown">
+              Institutions
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="institutionsDropdown">
+              <li><a class="dropdown-item" href="{{ url_for('hoi_dashboard') }}">My Institution Dashboard</a></li>
+            </ul>
+          </li>
+          {% endif %}
+
+
           <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
           <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
           <li class="nav-item"><a class="nav-link" href="#resources">Resources</a></li>
@@ -758,7 +769,7 @@
             </div>
             <div class="col-md-4">
               <h4>Contact Information</h4>
-              <p><strong>Name:</strong> Faith Kiprono (SCDE)</p>
+              <p><strong>Name:</strong> Director X (SCDE)</p>
               <p><strong>Office Location:</strong> Nyamira South Sub-County Offices</p>
               <p><strong>Email:</strong> scde.nyamira@gmail.com</p>
               <p><strong>Phone:</strong> +254 781234567</p>
@@ -802,10 +813,10 @@
             </div>
             <div class="col-md-4">
               <h3>Contact Information</h3>
-              <p><strong>Name:</strong> George K (SCQASO)</p>
+              <p><strong>Name:</strong> G K (SCQASO)</p>
               <p><strong>Office Location:</strong> Nyamira South Sub-County Offices</p>
               <p><strong>Email:</strong> scqaso.nyamira@gmail.com</p>
-              <p><strong>Phone:</strong> +254 712345678</p>
+              <p><strong>Phone:</strong> +254 7******65</p>
             </div>
           </div>
         </div>
